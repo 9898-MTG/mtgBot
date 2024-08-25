@@ -1,0 +1,59 @@
+/* Improved CSS */
+body {
+    font-family: 'AR CENA';
+    background-color: #1a0000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4d0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff0000;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #800000;
+    box-shadow: 0 0 20px #ff0000;
+}
+
+.booster-pack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff0000;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(2.00);
+    box-shadow: 0 0 20px #ff0000;
+}

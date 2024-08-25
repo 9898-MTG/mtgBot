@@ -1,0 +1,315 @@
+{
+  "nodes": [
+    {
+      "type": "command",
+      "name": "help",
+      "guid": "7942fe4c-dffa-4146-8cab-d254b3d80d5d",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "37eda463-a170-44f9-af54-61378ffc9294"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 148,
+      "y": 188
+    },
+    {
+      "type": "command",
+      "name": "info",
+      "guid": "2224944a-561a-4fa1-824b-2f31ea37c836",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "5053a44d-4a5e-460a-974d-da0cc07aac7c"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 149,
+      "y": 325
+    },
+    {
+      "type": "response",
+      "name": "help menu",
+      "guid": "37eda463-a170-44f9-af54-61378ffc9294",
+      "reactionFields": [],
+      "embedfields": [
+        {
+          "name": "!help",
+          "value": "Shows this menu",
+          "inline": "true"
+        },
+        {
+          "name": "!info",
+          "value": "Shows some info",
+          "inline": "true"
+        }
+      ],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7942fe4c-dffa-4146-8cab-d254b3d80d5d"
+        }
+      ],
+      "x": 345,
+      "y": 182,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "1FFF57",
+        "Help Menu",
+        "",
+        "Bot Name Here",
+        "",
+        "",
+        "This is the embed description, replace this with some info about your bot!",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "show info",
+      "guid": "5053a44d-4a5e-460a-974d-da0cc07aac7c",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2224944a-561a-4fa1-824b-2f31ea37c836"
+        }
+      ],
+      "x": 360,
+      "y": 324,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.DefaultChannel.id}",
+        "Command Author: ${dbsVars.CommandAuthor.displayName}\nTagged author: <@${dbsVars.CommandAuthor.id}>\nYou can insert more values by clicking the \"Insert Variable\" button next to this field!",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "slash",
+      "name": "chat",
+      "guid": "e53e876d-e676-4605-a63d-2652de178920",
+      "outputs": [],
+      "inputs": [],
+      "x": 917,
+      "y": 487,
+      "description": "chat with the bot",
+      "options": [
+        {
+          "name": "prompt",
+          "description": "chat prompt",
+          "type": "STRING",
+          "required": false
+        },
+        {
+          "name": "commands",
+          "description": "commands",
+          "type": "STRING",
+          "required": false
+        },
+        {
+          "name": "role",
+          "description": "role",
+          "type": "ROLE",
+          "required": false
+        },
+        {
+          "name": "user",
+          "description": "user",
+          "type": "USER",
+          "required": false
+        }
+      ],
+      "ephemeral": true
+    },
+    {
+      "type": "response",
+      "name": "chatResponse",
+      "guid": "5e9d1ae2-b0ea-4b86-90b2-c1f9401091c2",
+      "embedfields": [],
+      "outputs": [],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "4e52b06e-d845-4298-8d4f-a096e36e0f6c"
+        }
+      ],
+      "x": 714,
+      "y": 110,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "response",
+      "guid": "58bba6e9-8038-4b79-abbf-bc38084398c3",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2933d4c6-55d1-415d-97fc-9bde37c19f45"
+        }
+      ],
+      "x": 527,
+      "y": 92,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "messageActionRows": []
+    },
+    {
+      "type": "slash",
+      "name": "chat_1",
+      "guid": "2933d4c6-55d1-415d-97fc-9bde37c19f45",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "58bba6e9-8038-4b79-abbf-bc38084398c3",
+            "fc497b3e-7af1-4f04-af7a-a77660dd66bb",
+            "f0842e00-5d03-4985-82e2-5494436bcb6f"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "58bba6e9-8038-4b79-abbf-bc38084398c3"
+        }
+      ],
+      "x": 334,
+      "y": 476
+    },
+    {
+      "type": "slash",
+      "name": "chat_2",
+      "guid": "fc497b3e-7af1-4f04-af7a-a77660dd66bb",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2933d4c6-55d1-415d-97fc-9bde37c19f45"
+        }
+      ],
+      "x": 506,
+      "y": 607
+    },
+    {
+      "type": "slash",
+      "name": "chat_2_1",
+      "guid": "f0842e00-5d03-4985-82e2-5494436bcb6f",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2933d4c6-55d1-415d-97fc-9bde37c19f45"
+        }
+      ],
+      "x": 513,
+      "y": 461
+    },
+    {
+      "type": "response",
+      "name": "respond",
+      "guid": "f67a3b30-c5b1-4c6f-932b-2e23a2c29882",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f67a3b30-c5b1-4c6f-932b-2e23a2c29882"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f67a3b30-c5b1-4c6f-932b-2e23a2c29882"
+        }
+      ],
+      "x": 719,
+      "y": 530,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "messageActionRows": []
+    },
+    {
+      "type": "slash",
+      "name": "proceed",
+      "guid": "8719fc76-df70-49b9-9787-f1d8d1a77cea",
+      "outputs": [],
+      "inputs": [],
+      "x": 549,
+      "y": 282,
+      "description": "proceed",
+      "options": [],
+      "ephemeral": true
+    }
+  ]
+}

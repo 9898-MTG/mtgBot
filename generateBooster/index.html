@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Generate Booster</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<header>
+		<h1>Generate Booster</h1>
+	</header>
+	<main>
+		<p>This is the generate booster page.</p>
+		<div id="booster-container">
+			<textarea id="scryfall-syntax" rows="4" cols="50" placeholder="Enter Scryfall syntax here..."></textarea>
+			<div>
+				<label for="used-syntax">Used Syntax:</label>
+				<textarea id="used-syntax" rows="4" cols="50" readonly title="Used Scryfall syntax"></textarea>
+			</div>
+			<div>
+				<label for="result-quantity">Quantity:</label>
+				<input type="number" id="result-quantity" min="1" max="100" value="15">
+			</div>
+		</div>
+		<button id="generate-booster" type="button">Generate Booster</button>
+		<div id="results">
+			<ul id="card-names"></ul>
+			<div id="card-images"></div>
+		</div>
+
+<script src="script.js"></script>
+	</main>
+	<footer>
+		<p>2024 © 9898-MTG</p>
+	</footer>
+</body>
+</html>
