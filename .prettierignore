@@ -1,0 +1,8 @@
+node_modules
+discord/BotFiles/node_modules
+solution/mtgBot/obj
+solution/mtgBot/bin
+*.accdb
+*.ttf
+*.pdf
+package-lock.json

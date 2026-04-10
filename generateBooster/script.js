@@ -1,89 +1,261 @@
-document.getElementById('generate-booster').addEventListener('click', generateBooster);
+/**
+ * @file Booster Generator — Scryfall API-powered random booster packs
+ * @description Generates random MTG booster packs using the Scryfall search API.
+ *
+ * Hooks emitted:
+ * - H50:BoosterGenerated — after a booster pack is generated
+ * - H52:ApiRequest — on each Scryfall API call
+ */
 
-function getRandomScryfallSyntax() {
-    const ID = ['w', 'u', 'b', 'g', 'r', 'c', 'wu', 'wb', 'wg', 'wr', 'ub', 'ug', 'ur', 'bg', 'br', 'gr', 'wub', 'wub', 'wur', 'bgr', 'wubgr'];
-    const colors = ['white', 'blue', 'black', 'red', 'green'];
-    const types = ['creature', 'instant', 'sorcery', 'artifact', 'enchantment', 'planeswalker'];
-    const rarities = ['common', 'uncommon', 'rare', 'mythic'];
-    const sets = ['khm', 'znr', 'm21', 'iko', 'thb']; // Example set codes
-    const cmcs = [1, 2, 3, 4, 5, 6, 7]; // Example converted mana costs
-    const powers = ['1', '2', '3', '4', '5', '6', '7', '*']; // Example powers
-    const toughnesses = ['1', '2', '3', '4', '5', '6', '7', '*']; // Example toughnesses
-    const keywords = ['flying', 'trample', 'lifelink', 'deathtouch', 'haste']; // Example keywords
-    const formats = ['standard', 'modern', 'commander', 'legacy', 'vintage']; // Example formats
-    const frameEffects = ['legendary', 'miracle', 'nyxtouched', 'draft', 'devoid']; // Example frame effects
-    const watermarks = ['set', 'guild', 'clan', 'faction', 'planeswalker']; // Example watermarks
-    const borders = ['black', 'white', 'silver', 'borderless']; // Example borders
-    const games = ['paper', 'arena', 'mtgo']; // Example games
-    const languages = ['en', 'es', 'fr', 'de', 'it', 'pt', 'ja', 'ko', 'ru', 'zhs', 'zht']; // Example languages
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    const randomType = types[Math.floor(Math.random() * types.length)];
-    const randomRarity = rarities[Math.floor(Math.random() * rarities.length)];
-    const randomSet = sets[Math.floor(Math.random() * sets.length)];
-    const randomCmc = cmcs[Math.floor(Math.random() * cmcs.length)];
-    const randomPower = powers[Math.floor(Math.random() * powers.length)];
-    const randomToughness = toughnesses[Math.floor(Math.random() * toughnesses.length)];
-    const randomKeyword = keywords[Math.floor(Math.random() * keywords.length)];
-    const randomFormat = formats[Math.floor(Math.random() * formats.length)];
-    const randomFrameEffect = frameEffects[Math.floor(Math.random() * frameEffects.length)];
-    const randomWatermark = watermarks[Math.floor(Math.random() * watermarks.length)];
-    const randomBorder = borders[Math.floor(Math.random() * borders.length)];
-    const randomGame = games[Math.floor(Math.random() * games.length)];
-    const randomLanguage = languages[Math.floor(Math.random() * languages.length)];
-    const randomID = ID[Math.floor(Math.random() * ID.length)];
-    const queries = [
-        `id:${randomID}`,
-        `color:${randomColor}`,
-        `type:${randomType}`,
-        `rarity:${randomRarity}`,
-        `set:${randomSet}`,
-        `cmc=${randomCmc}`,
-        `power=${randomPower}`,
-        `toughness=${randomToughness}`,
-        `keyword:${randomKeyword}`,
-        `format:${randomFormat}`,
-        `frame:${randomFrameEffect}`,
-        `watermark:${randomWatermark}`,
-        `border:${randomBorder}`,
-        `game:${randomGame}`,
-        `lang:${randomLanguage}`,
-        `name:/.*${randomKeyword}.*/`, // Regex for card name containing the keyword
-        `oracle:/.*${randomKeyword}.*/`, // Regex for oracle text containing the keyword
-        `artist:/.*${randomKeyword}.*/`, // Regex for artist name containing the keyword
-        `flavor:/.*${randomKeyword}.*/` // Regex for flavor text containing the keyword
-    ];
-    // Combine random queries
-    const randomQuery = queries.sort(() => Math.random() - 0.5).slice(0, 3).join(' ');
-    return randomQuery;
+/* ---------- Constants & Configuration ---------- */
+
+const SCRYFALL_SEARCH_URL = "https://api.scryfall.com/cards/search";
+const MAX_RETRIES = 3;
+const RETRY_DELAY_MS = 1000;
+const REQUEST_TIMEOUT_MS = 10000;
+
+const QUERY_POOLS = {
+    id: ["w", "u", "b", "g", "r", "c", "wu", "wb", "wg", "wr", "ub", "ug", "ur", "bg", "br", "gr", "wub", "wur", "bgr", "wubgr"],
+    colors: ["white", "blue", "black", "red", "green"],
+    types: ["creature", "instant", "sorcery", "artifact", "enchantment", "planeswalker"],
+    rarities: ["common", "uncommon", "rare", "mythic"],
+    sets: ["khm", "znr", "m21", "iko", "thb"],
+    cmcs: [1, 2, 3, 4, 5, 6, 7],
+    powers: ["1", "2", "3", "4", "5", "6", "7", "*"],
+    toughnesses: ["1", "2", "3", "4", "5", "6", "7", "*"],
+    keywords: ["flying", "trample", "lifelink", "deathtouch", "haste"],
+    formats: ["standard", "modern", "commander", "legacy", "vintage"],
+    frameEffects: ["legendary", "miracle", "nyxtouched", "draft", "devoid"],
+    watermarks: ["set", "guild", "clan", "faction", "planeswalker"],
+    borders: ["black", "white", "silver", "borderless"],
+    games: ["paper", "arena", "mtgo"],
+    languages: ["en", "es", "fr", "de", "it", "pt", "ja", "ko", "ru", "zhs", "zht"]
+};
+
+/* ---------- Utility Functions ---------- */
+
+/**
+ * Pick a random element from an array.
+ * @param {Array} arr
+ * @returns {*}
+ */
+function randomChoice(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
 }
 
-async function generateBooster() {
-    const userSyntax = document.getElementById('scryfall-syntax').value.trim();
-    const syntax = userSyntax || getRandomScryfallSyntax();
-    const quantity = parseInt(document.getElementById('result-quantity').value, 10);
-    const url = `https://api.scryfall.com/cards/search?q=${encodeURIComponent(syntax)}`;
-    // Display the used Scryfall syntax in the text area
-    document.getElementById('used-syntax').value = syntax;
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        const cards = data.data;
-        // Shuffle the cards array
-        cards.sort(() => Math.random() - 0.5);
-        // Clear previous results
-        document.getElementById('card-names').innerHTML = '';
-        document.getElementById('card-images').innerHTML = '';
-        // Display the results
-        cards.slice(0, quantity).forEach(card => {
-            const listItem = document.createElement('li');
-            listItem.textContent = card.name;
-            document.getElementById('card-names').appendChild(listItem);
-            const img = document.createElement('img');
-            img.src = card.image_uris.normal;
-            img.alt = card.name;
-            document.getElementById('card-images').appendChild(img);
-        });
-    } catch (error) {
-        console.error('Error fetching data from Scryfall API:', error);
+/**
+ * Shuffle an array using Fisher-Yates algorithm.
+ * @param {Array} arr
+ * @returns {Array}
+ */
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+
+/**
+ * Sleep for the specified number of milliseconds.
+ * @param {number} ms
+ * @returns {Promise<void>}
+ */
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+/* ---------- Scryfall API ---------- */
+
+/**
+ * Build a random Scryfall search query from the query pools.
+ * @returns {string} A Scryfall search syntax string
+ */
+function getRandomScryfallSyntax() {
+    const keyword = randomChoice(QUERY_POOLS.keywords);
+    const queries = [
+        `id:${randomChoice(QUERY_POOLS.id)}`,
+        `color:${randomChoice(QUERY_POOLS.colors)}`,
+        `type:${randomChoice(QUERY_POOLS.types)}`,
+        `rarity:${randomChoice(QUERY_POOLS.rarities)}`,
+        `set:${randomChoice(QUERY_POOLS.sets)}`,
+        `cmc=${randomChoice(QUERY_POOLS.cmcs)}`,
+        `power=${randomChoice(QUERY_POOLS.powers)}`,
+        `toughness=${randomChoice(QUERY_POOLS.toughnesses)}`,
+        `keyword:${keyword}`,
+        `format:${randomChoice(QUERY_POOLS.formats)}`,
+        `frame:${randomChoice(QUERY_POOLS.frameEffects)}`,
+        `watermark:${randomChoice(QUERY_POOLS.watermarks)}`,
+        `border:${randomChoice(QUERY_POOLS.borders)}`,
+        `game:${randomChoice(QUERY_POOLS.games)}`,
+        `lang:${randomChoice(QUERY_POOLS.languages)}`,
+        `name:/.*${keyword}.*/`,
+        `oracle:/.*${keyword}.*/`,
+        `artist:/.*${keyword}.*/`,
+        `flavor:/.*${keyword}.*/`
+    ];
+
+    return shuffleArray(queries).slice(0, 3).join(" ");
+}
+
+/**
+ * Fetch JSON from a URL with retry logic.
+ * @param {string} url
+ * @param {number} [retries=MAX_RETRIES]
+ * @returns {Promise<Object>}
+ */
+async function fetchWithRetry(url, retries = MAX_RETRIES) {
+    let lastError;
+    for (let attempt = 1; attempt <= retries; attempt++) {
+        try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+
+            const startTime = performance.now();
+            const response = await fetch(url, { signal: controller.signal });
+            clearTimeout(timeoutId);
+            const duration = Math.round(performance.now() - startTime);
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+
+            const data = await response.json();
+            // H52:ApiRequest hook (dispatched as custom event)
+            document.dispatchEvent(new CustomEvent("hook:H52:ApiRequest", {
+                detail: { url, method: "GET", status: response.status, duration }
+            }));
+            return data;
+        } catch (error) {
+            lastError = error;
+            if (attempt < retries) {
+                await sleep(RETRY_DELAY_MS * attempt);
+            }
+        }
+    }
+    throw new Error(`Request failed after ${retries} attempts: ${lastError.message}`);
+}
+
+/* ---------- UI State Management ---------- */
+
+/**
+ * Show or hide the loading state.
+ * @param {boolean} loading
+ */
+function setLoadingState(loading) {
+    const btn = document.getElementById("generate-booster");
+    if (btn) {
+        btn.disabled = loading;
+        btn.textContent = loading ? "Generating..." : "Generate Booster";
     }
 }
+
+/**
+ * Display an error message to the user.
+ * @param {string} message
+ */
+function showError(message) {
+    const cardNames = document.getElementById("card-names");
+    const cardImages = document.getElementById("card-images");
+    if (cardNames) cardNames.innerHTML = "";
+    if (cardImages) {
+        const errorP = document.createElement("p");
+        errorP.style.color = "#ff6b6b";
+        errorP.style.padding = "1rem";
+        errorP.textContent = message;
+        cardImages.innerHTML = "";
+        cardImages.appendChild(errorP);
+    }
+}
+
+/**
+ * Clear previous results from the display.
+ */
+function clearResults() {
+    const cardNames = document.getElementById("card-names");
+    const cardImages = document.getElementById("card-images");
+    if (cardNames) cardNames.innerHTML = "";
+    if (cardImages) cardImages.innerHTML = "";
+}
+
+/**
+ * Render a single card into the results.
+ * @param {Object} card - Scryfall card object
+ */
+function renderCard(card) {
+    const cardNames = document.getElementById("card-names");
+    const cardImages = document.getElementById("card-images");
+
+    if (cardNames) {
+        const listItem = document.createElement("li");
+        listItem.textContent = card.name;
+        cardNames.appendChild(listItem);
+    }
+
+    if (cardImages) {
+        const img = document.createElement("img");
+        // Handle double-faced cards
+        img.src = card.image_uris
+            ? card.image_uris.normal
+            : (card.card_faces && card.card_faces[0].image_uris
+                ? card.card_faces[0].image_uris.normal
+                : "");
+        img.alt = card.name;
+        img.loading = "lazy";
+        cardImages.appendChild(img);
+    }
+}
+
+/* ---------- Main Generation Logic ---------- */
+
+/**
+ * Generate a booster pack by fetching cards from Scryfall.
+ * Handles error states, loading UI, and result rendering.
+ */
+async function generateBooster() {
+    const syntaxInput = document.getElementById("scryfall-syntax");
+    const quantityInput = document.getElementById("result-quantity");
+    const usedSyntaxDisplay = document.getElementById("used-syntax");
+
+    const userSyntax = syntaxInput ? syntaxInput.value.trim() : "";
+    const syntax = userSyntax || getRandomScryfallSyntax();
+    const quantity = quantityInput ? parseInt(quantityInput.value, 10) || 10 : 10;
+    const url = `${SCRYFALL_SEARCH_URL}?q=${encodeURIComponent(syntax)}`;
+
+    if (usedSyntaxDisplay) {
+        usedSyntaxDisplay.value = syntax;
+    }
+
+    setLoadingState(true);
+    clearResults();
+
+    try {
+        const data = await fetchWithRetry(url);
+
+        if (!data.data || data.data.length === 0) {
+            showError("No cards found for the given search criteria. Try different syntax.");
+            return;
+        }
+
+        const cards = shuffleArray([...data.data]);
+        cards.slice(0, quantity).forEach(renderCard);
+
+        // H50:BoosterGenerated hook
+        document.dispatchEvent(new CustomEvent("hook:H50:BoosterGenerated", {
+            detail: { syntax, cardCount: Math.min(quantity, cards.length), success: true }
+        }));
+    } catch (error) {
+        console.error("Error fetching data from Scryfall API:", error);
+        showError(`Failed to generate booster: ${error.message}. Please try again.`);
+
+        document.dispatchEvent(new CustomEvent("hook:H50:BoosterGenerated", {
+            detail: { syntax, cardCount: 0, success: false }
+        }));
+    } finally {
+        setLoadingState(false);
+    }
+}
+
+/* ---------- Event Binding ---------- */
+
+document.getElementById("generate-booster").addEventListener("click", generateBooster);

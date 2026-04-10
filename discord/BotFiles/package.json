@@ -15,7 +15,7 @@
     "discord.js": "^13.0.1",
     "express": "^4.17.1",
     "flatted": "^3.0.2",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "papaparse": "^5.2.0",
     "setimmediate": "^1.0.5",
     "winston": "^3.2.1"

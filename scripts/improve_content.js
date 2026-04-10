@@ -1,73 +1,117 @@
-// Improved JS
-const fs = require('fs');
-const path = require('path');
+/**
+ * @module scripts/improve_content
+ * @description Recursively traverses the project and applies basic content
+ *              improvements to HTML, CSS, and JS files. Skips already-improved
+ *              files and excludes dependency directories.
+ *
+ * Usage:
+ *   node scripts/improve_content.js [directory] [--dry-run]
+ */
 
-function improveHTML(content) {
-    return `<!-- Improved HTML -->\n${content}`;
-}
+const fs = require("fs");
+const path = require("path");
 
-function improveCSS(content) {
-    return `/* Improved CSS */\n${content}`;
-}
+const EXCLUDED_DIRS = new Set(["node_modules", ".git", "obj", "bin", ".vs", "__tests__"]);
+const args = process.argv.slice(2);
+const dryRun = args.includes("--dry-run");
+const targetDir = args.find(a => !a.startsWith("--")) || path.join(__dirname, "..");
 
-function improveJS(content) {
-    return `// Improved JS\n${content}`;
-}
+const stats = { improved: 0, skipped: 0, errors: 0 };
 
-// Function to improve file content based on its type
-function improveFileContent(filePath, content) {
-    const ext = path.extname(filePath);
+/**
+ * Check if file already has an improvement marker.
+ * @param {string} content
+ * @param {string} ext
+ * @returns {boolean}
+ */
+function isAlreadyImproved(content, ext) {
     switch (ext) {
-        case '.css':
-            return improveCSS(content);
-        case '.js':
-            return improveJS(content);
-        case '.html':
-            return improveHTML(content);
+        case ".html":
+            return content.startsWith("<!-- Improved HTML -->") || content.trimStart().startsWith("<!DOCTYPE");
+        case ".css":
+            return content.startsWith("/* Improved CSS */");
+        case ".js":
+            return content.startsWith("// Improved JS") || content.startsWith("/**");
+        default:
+            return true;
+    }
+}
+
+/**
+ * Add improvement marker to file content.
+ * @param {string} content
+ * @param {string} ext
+ * @returns {string}
+ */
+function addImproveMarker(content, ext) {
+    switch (ext) {
+        case ".html":
+            return `<!-- Improved HTML -->\n${content}`;
+        case ".css":
+            return `/* Improved CSS */\n${content}`;
+        case ".js":
+            return `// Improved JS\n${content}`;
         default:
             return content;
     }
 }
 
-// Function to read, improve, and write files
+/**
+ * Process a directory recursively.
+ * @param {string} directoryPath
+ */
 function processDirectory(directoryPath) {
-    fs.readdir(directoryPath, (err, items) => {
-        if (err) {
-            console.error(`Error reading directory ${directoryPath}:`, err);
-            return;
+    let items;
+    try {
+        items = fs.readdirSync(directoryPath);
+    } catch (err) {
+        console.error(`Error reading directory ${directoryPath}: ${err.message}`);
+        stats.errors++;
+        return;
+    }
+
+    for (const item of items) {
+        if (EXCLUDED_DIRS.has(item) || item.startsWith(".")) continue;
+
+        const itemPath = path.join(directoryPath, item);
+        let itemStats;
+        try {
+            itemStats = fs.statSync(itemPath);
+        } catch (err) {
+            stats.errors++;
+            continue;
         }
 
-        items.forEach(item => {
-            const itemPath = path.join(directoryPath, item);
-            fs.stat(itemPath, (err, stats) => {
-                if (err) {
-                    console.error(`Error stating item ${itemPath}:`, err);
-                    return;
+        if (itemStats.isFile()) {
+            const ext = path.extname(item).toLowerCase();
+            if (![".js", ".css", ".html"].includes(ext)) continue;
+
+            try {
+                const content = fs.readFileSync(itemPath, "utf8");
+                if (isAlreadyImproved(content, ext)) {
+                    stats.skipped++;
+                    continue;
                 }
 
-                if (stats.isFile()) {
-                    fs.readFile(itemPath, 'utf8', (err, content) => {
-                        if (err) {
-                            console.error(`Error reading file ${itemPath}:`, err);
-                            return;
-                        }
-
-                        const improvedContent = improveFileContent(itemPath, content);
-                        fs.writeFile(itemPath, improvedContent, 'utf8', err => {
-                            if (err) {
-                                console.error(`Error writing file ${itemPath}:`, err);
-                            } else {
-                                console.log(`Improved file: ${itemPath}`);
-                            }
-                        });
-                    });
-                } else if (stats.isDirectory()) {
-                    processDirectory(itemPath);
+                const improved = addImproveMarker(content, ext);
+                if (dryRun) {
+                    console.log(`  [DRY RUN] Would improve: ${path.relative(targetDir, itemPath)}`);
+                } else {
+                    fs.writeFileSync(itemPath, improved, "utf8");
+                    console.log(`  ✓ Improved: ${path.relative(targetDir, itemPath)}`);
                 }
-            });
-        });
-    });
+                stats.improved++;
+            } catch (err) {
+                console.error(`  ✗ Error: ${path.relative(targetDir, itemPath)}: ${err.message}`);
+                stats.errors++;
+            }
+        } else if (itemStats.isDirectory()) {
+            processDirectory(itemPath);
+        }
+    }
 }
 
-// Start processing from the current directory
-processDirectory(__dirname);
+console.log(`\n📝 Improving content in: ${targetDir}`);
+if (dryRun) console.log("   (DRY RUN — no files will be modified)\n");
+processDirectory(targetDir);
+console.log(`\n📊 Results: ${stats.improved} improved, ${stats.skipped} skipped, ${stats.errors} errors\n`);
