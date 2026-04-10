@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+combined.log
+botErrors.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build output
+solution/mtgBot/bin/
+solution/mtgBot/obj/
+
+# Package lock in subdirectories (root only is tracked)
+discord/BotFiles/package-lock.json
