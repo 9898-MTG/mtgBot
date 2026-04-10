@@ -16,7 +16,10 @@
     "validate": "npm run lint && npm run test",
     "validate:json": "node scripts/validateJson.js",
     "build:toc": "python3 scripts/generate_toc.py",
-    "generate:nav": "node scripts/generateNavPages.js"
+    "generate:nav": "node scripts/generateNavPages.js",
+    "generate:hooks": "node scripts/generateHookDocs.js",
+    "improve": "node scripts/improveFiles.js",
+    "improve:content": "node scripts/improve_content.js"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
