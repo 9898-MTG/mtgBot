@@ -159,7 +159,12 @@ function showError(message) {
     const cardImages = document.getElementById("card-images");
     if (cardNames) cardNames.innerHTML = "";
     if (cardImages) {
-        cardImages.innerHTML = `<p style="color: #ff6b6b; padding: 1rem;">${message}</p>`;
+        const errorP = document.createElement("p");
+        errorP.style.color = "#ff6b6b";
+        errorP.style.padding = "1rem";
+        errorP.textContent = message;
+        cardImages.innerHTML = "";
+        cardImages.appendChild(errorP);
     }
 }
 

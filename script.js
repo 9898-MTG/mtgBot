@@ -17,6 +17,7 @@
 
     /**
      * Navigate to the selected page.
+     * Sanitizes the value to prevent XSS — only allows alphanumeric characters and underscores.
      * @param {string} value - The directory name to navigate to
      */
     function navigateTo(value) {
@@ -25,15 +26,22 @@
             return;
         }
 
+        // Sanitize: only allow alphanumeric, hyphens, and underscores
+        const sanitized = value.replace(/[^a-zA-Z0-9_-]/g, "");
+        if (sanitized !== value || sanitized.length === 0) {
+            console.error("Invalid selection: contains disallowed characters");
+            return;
+        }
+
         // H53:NavChange hook (custom event for web hook integration)
         document.dispatchEvent(new CustomEvent("hook:H53:NavChange", {
             detail: {
                 from: window.location.pathname,
-                to: `./${value}/index.html`
+                to: "./" + sanitized + "/index.html"
             }
         }));
 
-        window.location.href = `./${value}/index.html`;
+        window.location.href = "./" + sanitized + "/index.html";
     }
 
     // Handle menu change events

@@ -121,7 +121,12 @@ function setLoadingState(loading) {
  */
 function showError(message) {
     if (boosterPackContainer) {
-        boosterPackContainer.innerHTML = `<p style="color: #ff6b6b; padding: 1rem;">${message}</p>`;
+        const errorP = document.createElement("p");
+        errorP.style.color = "#ff6b6b";
+        errorP.style.padding = "1rem";
+        errorP.textContent = message;
+        boosterPackContainer.innerHTML = "";
+        boosterPackContainer.appendChild(errorP);
     }
 }
 
