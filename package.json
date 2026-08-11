@@ -19,7 +19,9 @@
     "generate:nav": "node scripts/generateNavPages.js",
     "generate:hooks": "node scripts/generateHookDocs.js",
     "improve": "node scripts/improveFiles.js",
-    "improve:content": "node scripts/improve_content.js"
+    "improve:content": "node scripts/improve_content.js",
+    "maintain": "node scripts/weeklyMaintenance.js",
+    "maintain:dry": "node scripts/weeklyMaintenance.js --dry-run"
   },
   "devDependencies": {
     "eslint": "^8.56.0",

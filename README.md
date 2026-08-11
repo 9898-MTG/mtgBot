@@ -252,6 +252,30 @@ Event hooks, lifecycle integration points, and extension guide for the Discord b
 
 ---
 
+## Maintenance & Automation
+
+The repository is kept healthy by a **weekly maintenance workflow**
+([`.github/workflows/weekly-maintenance.yml`](.github/workflows/weekly-maintenance.yml)),
+which runs every Monday and can also be triggered manually. Each run executes
+[`scripts/weeklyMaintenance.js`](scripts/weeklyMaintenance.js) to:
+
+- Ensure every directory and subdirectory has a `README.md`, generated from the
+  directory's actual files and subdirectories.
+- Audit the tree for gaps (missing docs, empty files) and record findings.
+- Write a Markdown report to [`reports/`](reports/) and a JSON log to
+  [`logs/`](logs/) so each weekly run builds iteratively on the last.
+- Regenerate documentation and validate the codebase (`lint`, `test`,
+  `validate:json`) before committing any changes.
+
+Run it locally with:
+
+```bash
+npm run maintain        # apply: create missing READMEs, write report + log
+npm run maintain:dry    # audit only, no files written
+```
+
+---
+
 ## Contributing
 
 1. Fork the repository
