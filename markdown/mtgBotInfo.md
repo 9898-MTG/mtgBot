@@ -6,7 +6,7 @@ mtgBot is an AI Bot trained for Magic: the Gathering relations by adamf9898.
 
 # mtgBot URL
 
-### [mtgBot]("https://app.codegpt.co/en/chat/share/29fe07f3-96bc-4eca-815d-3d31c1fcf6f4?pincode=x6wxye")
+### [mtgBot](https://perchance.org/9898-mtg-chaos-rpg-2024)
 
 # mtgBot Agent ID
 ### ``` 29fe07f3-96bc-4eca-815d-3d31c1fcf6f4 ```

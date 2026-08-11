@@ -6,6 +6,7 @@
 
 ## Files
 
+- `perchance.js` — Perchance random-generator client, grammar parser, and evaluator.
 - `utils.js`
 
 ---

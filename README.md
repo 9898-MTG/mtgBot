@@ -49,7 +49,7 @@
 │                    9898-MTG Platform                     │
 ├──────────────┬──────────────┬───────────────────────────┤
 │  Discord Bot │   Web Apps   │     AI Agent (mtgBot)     │
-│  (Node.js)   │  (HTML/JS)   │     (CodeGPT / GPT)      │
+│  (Node.js)   │  (HTML/JS)   │     (Perchance / GPT)    │
 ├──────────────┼──────────────┼───────────────────────────┤
 │ discord.js   │ Scryfall API │ Prompt Templates          │
 │ express      │ Vanilla JS   │ Personality Traits        │
@@ -68,8 +68,8 @@
 | **Bot**      | Node.js, discord.js v13, express, winston      |
 | **Frontend** | HTML5, CSS3, Vanilla JavaScript                |
 | **Blazor**   | .NET 8, Blazor WebAssembly, C#                 |
-| **AI**       | CodeGPT Agent, GPT Prompt Engineering          |
-| **APIs**     | Scryfall, Discord API, Google Forms/Sheets     |
+| **AI**       | Perchance Generators, GPT Prompt Engineering   |
+| **APIs**     | Scryfall, Perchance, Discord API, Google Forms/Sheets |
 | **Data**     | JSON, CSV (PapaParse), Microsoft Access        |
 | **Logging**  | Winston (JSON format, file-based)              |
 | **Security** | discord-anti-spam, configurable rules          |
@@ -172,6 +172,7 @@ dotnet run
 | **Anti-Spam**               | Configurable warn/kick/ban thresholds                    | `discord/BotFiles/BotData/`      |
 | **Booster Generation**      | Scryfall API-powered random booster packs                | `generateBooster/`               |
 | **Chaos Commander Draft**   | Custom MTG draft format with interactive UI              | `chaos_commander_drafting/`      |
+| **Perchance RPG Generator** | Random Chaos RPG content via the Perchance grammar engine | `perchance/`, `lib/perchance.js` |
 | **User Data Tracking**      | XP, statistics, and persistent user data                 | `discord/BotFiles/BotData/user/` |
 | **Variable System**         | Global and server-scoped runtime variables               | `discord/BotFiles/BotData/`      |
 | **AI Agent**                | MTG development assistant with personality traits        | `agents/`, `markdown/`           |
@@ -220,6 +221,7 @@ Event hooks, lifecycle integration points, and extension guide for the Discord b
 | API                   | Base URL                          | Usage                                    |
 |-----------------------|-----------------------------------|------------------------------------------|
 | **Scryfall**          | `https://api.scryfall.com`        | Card data, images, booster generation    |
+| **Perchance**         | `https://perchance.org`           | Random Chaos RPG content generation       |
 | **Discord**           | via discord.js                    | Bot commands, events, user management    |
 | **Google Forms**      | Embedded links                    | League registration and surveys          |
 | **Google Sheets**     | URL references                    | Standings, statistics, data analysis     |

@@ -313,8 +313,8 @@ function run({ targetDir = ROOT, dryRun = false } = {}) {
     if (!dryRun) {
         const now = new Date();
         const dateStamp = now.toISOString().split("T")[0];
-        const reportsDir = path.join(ROOT, "reports");
-        const logsDir = path.join(ROOT, "logs");
+        const reportsDir = path.join(targetDir, "reports");
+        const logsDir = path.join(targetDir, "logs");
         fs.mkdirSync(reportsDir, { recursive: true });
         fs.mkdirSync(logsDir, { recursive: true });
 

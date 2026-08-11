@@ -1,0 +1,68 @@
+name: Daily Improve
+
+# Runs a daily automated improvement pass on mtgBot. It iteratively improves the
+# repository every day: applying content improvements, ensuring documentation
+# coverage, validating the codebase, and committing the results.
+#
+# "Starting now" — the schedule runs every day at 09:00 UTC. It can also be
+# triggered manually from the Actions tab via workflow_dispatch.
+
+on:
+  schedule:
+    # Every day at 09:00 UTC
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Prevent overlapping daily runs from racing on the same branch.
+concurrency:
+  group: daily-improve
+  cancel-in-progress: false
+
+jobs:
+  improve:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run daily maintenance and improvement pass
+        run: |
+          npm run maintain
+          npm run improve || true
+          npm run improve:content || true
+
+      - name: Regenerate documentation
+        run: |
+          npm run build:toc || true
+          npm run generate:hooks || true
+
+      - name: Validate codebase
+        run: |
+          npm run lint
+          npm test
+          npm run validate:json
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "chore: daily automated improvement ($(date -u +%Y-%m-%d))"
+            git push
+          else
+            echo "No changes to commit."
+          fi

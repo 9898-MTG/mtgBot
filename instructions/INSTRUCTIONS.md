@@ -259,7 +259,7 @@ The mtgBot AI agent is configured for MTG development assistance.
 
 ### Using the Agent
 
-- **Agent URL:** [mtgBot on CodeGPT](https://app.codegpt.co/en/chat/share/29fe07f3-96bc-4eca-815d-3d31c1fcf6f4?pincode=x6wxye)
+- **Agent URL:** [mtgBot on Perchance](https://perchance.org/9898-mtg-chaos-rpg-2024)
 - **Agent ID:** `29fe07f3-96bc-4eca-815d-3d31c1fcf6f4`
 
 ### Agent Configuration Files
