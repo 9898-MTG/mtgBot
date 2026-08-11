@@ -276,6 +276,28 @@ npm run maintain        # apply: create missing READMEs, write report + log
 npm run maintain:dry    # audit only, no files written
 ```
 
+### Scheduled Tasks (daily / weekly / monthly / yearly)
+
+The **per-file task scheduler** ([`scripts/taskScheduler.js`](scripts/taskScheduler.js))
+derives daily, weekly, monthly, and yearly **tasks** — each bundling *todos*,
+*actions*, and executable *commands* — for every file in the project. The
+result is written to [`tasks/`](tasks/) as a machine-readable manifest
+(`tasks/tasks.json`) that mtgBot can **contain**, **control**, and **execute**,
+plus human-readable views per cadence.
+
+```bash
+npm run tasks           # regenerate tasks/tasks.json and cadence docs
+npm run tasks:dry       # audit only, no files written
+npm run tasks:daily     # execute the whitelisted daily commands
+npm run tasks:weekly    # weekly / tasks:monthly / tasks:yearly
+```
+
+Only commands on the scheduler's whitelist are ever executed. The cadences are
+automated by the daily, weekly, monthly
+([`.github/workflows/monthly-tasks.yml`](.github/workflows/monthly-tasks.yml)),
+and yearly ([`.github/workflows/yearly-tasks.yml`](.github/workflows/yearly-tasks.yml))
+workflows. See [`tasks/README.md`](tasks/README.md) for details.
+
 ---
 
 ## Contributing
