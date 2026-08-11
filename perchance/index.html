@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perchance — 9898-MTG Chaos RPG Generator</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3 { color: #8b0000; }
+        a { color: #c9a52c; }
+        textarea, input {
+            width: 100%;
+            box-sizing: border-box;
+            background: #111;
+            color: #e0e0e0;
+            border: 1px solid #333;
+            border-radius: 4px;
+            padding: 8px;
+            font-family: monospace;
+        }
+        button {
+            background: linear-gradient(135deg, #8b0000, #5c0000);
+            color: #e0e0e0;
+            border: 1px solid #333;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 8px;
+        }
+        button:hover { background: linear-gradient(135deg, #a00000, #6c0000); }
+        #output {
+            margin-top: 16px;
+            padding: 12px;
+            background: #111;
+            border: 1px solid #8b0000;
+            border-radius: 4px;
+            min-height: 2em;
+        }
+        .field { margin-bottom: 12px; }
+        label { display: block; margin-bottom: 4px; color: #c9a52c; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Perchance Chaos RPG Generator</h1>
+    </header>
+    <main>
+        <p>
+            Generate random Magic: The Gathering Chaos RPG content using the
+            <a href="https://perchance.org/9898-mtg-chaos-rpg-2024" target="_blank" rel="noopener">9898-MTG Perchance generator</a>
+            grammar. Paste a Perchance list definition below (or edit the sample),
+            then generate output. This tool is powered by
+            <a href="../lib/perchance.js"><code>lib/perchance.js</code></a>.
+        </p>
+
+        <div class="field">
+            <label for="grammar">Perchance grammar</label>
+            <textarea id="grammar" rows="12" aria-label="Perchance grammar source">output
+  A [creature] with [keyword] appears in the [plane]!
+
+creature
+  Goblin Raider
+  Ancient Dragon ^2
+  Llanowar Elf
+
+keyword
+  flying
+  trample
+  haste
+  deathtouch
+
+plane
+  Ravnica
+  Innistrad
+  Dominaria</textarea>
+        </div>
+
+        <div class="field">
+            <label for="root">Root list</label>
+            <input id="root" type="text" value="output" aria-label="Root list name">
+        </div>
+
+        <button id="generate" type="button">Generate</button>
+
+        <h3>Output</h3>
+        <div id="output" role="status" aria-live="polite"></div>
+    </main>
+
+    <footer>
+        <p>2024 &copy; 9898-MTG</p>
+    </footer>
+
+    <script src="../lib/perchance.js"></script>
+    <script>
+        (function () {
+            "use strict";
+            var generateBtn = document.getElementById("generate");
+            var grammarEl = document.getElementById("grammar");
+            var rootEl = document.getElementById("root");
+            var outputEl = document.getElementById("output");
+
+            generateBtn.addEventListener("click", function () {
+                try {
+                    var lists = window.Perchance.parseGenerator(grammarEl.value);
+                    var root = rootEl.value.trim() || "output";
+                    outputEl.textContent = window.Perchance.generate(lists, { root: root });
+                } catch (error) {
+                    outputEl.textContent = "Error: " + error.message;
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

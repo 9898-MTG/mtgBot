@@ -26,8 +26,8 @@
 |-----------------|----------------------------------------------------|
 | **Name**        | mtgBot                                             |
 | **Agent ID**    | `29fe07f3-96bc-4eca-815d-3d31c1fcf6f4`            |
-| **Platform**    | CodeGPT                                            |
-| **URL**         | [mtgBot Chat](https://app.codegpt.co/en/chat/share/29fe07f3-96bc-4eca-815d-3d31c1fcf6f4?pincode=x6wxye) |
+| **Platform**    | Perchance (9898-MTG Chaos RPG)                     |
+| **URL**         | [9898-MTG Chaos RPG](https://perchance.org/9898-mtg-chaos-rpg-2024) |
 | **Creator**     | adamf9898                                          |
 | **League**      | 9898-MTG-League                                    |
 | **Version**     | 1.0                                                |

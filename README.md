@@ -49,7 +49,7 @@
 │                    9898-MTG Platform                     │
 ├──────────────┬──────────────┬───────────────────────────┤
 │  Discord Bot │   Web Apps   │     AI Agent (mtgBot)     │
-│  (Node.js)   │  (HTML/JS)   │     (CodeGPT / GPT)      │
+│  (Node.js)   │  (HTML/JS)   │     (Perchance / GPT)    │
 ├──────────────┼──────────────┼───────────────────────────┤
 │ discord.js   │ Scryfall API │ Prompt Templates          │
 │ express      │ Vanilla JS   │ Personality Traits        │
@@ -68,8 +68,8 @@
 | **Bot**      | Node.js, discord.js v13, express, winston      |
 | **Frontend** | HTML5, CSS3, Vanilla JavaScript                |
 | **Blazor**   | .NET 8, Blazor WebAssembly, C#                 |
-| **AI**       | CodeGPT Agent, GPT Prompt Engineering          |
-| **APIs**     | Scryfall, Discord API, Google Forms/Sheets     |
+| **AI**       | Perchance Generators, GPT Prompt Engineering   |
+| **APIs**     | Scryfall, Perchance, Discord API, Google Forms/Sheets |
 | **Data**     | JSON, CSV (PapaParse), Microsoft Access        |
 | **Logging**  | Winston (JSON format, file-based)              |
 | **Security** | discord-anti-spam, configurable rules          |
@@ -172,6 +172,7 @@ dotnet run
 | **Anti-Spam**               | Configurable warn/kick/ban thresholds                    | `discord/BotFiles/BotData/`      |
 | **Booster Generation**      | Scryfall API-powered random booster packs                | `generateBooster/`               |
 | **Chaos Commander Draft**   | Custom MTG draft format with interactive UI              | `chaos_commander_drafting/`      |
+| **Perchance RPG Generator** | Random Chaos RPG content via the Perchance grammar engine | `perchance/`, `lib/perchance.js` |
 | **User Data Tracking**      | XP, statistics, and persistent user data                 | `discord/BotFiles/BotData/user/` |
 | **Variable System**         | Global and server-scoped runtime variables               | `discord/BotFiles/BotData/`      |
 | **AI Agent**                | MTG development assistant with personality traits        | `agents/`, `markdown/`           |
@@ -220,6 +221,7 @@ Event hooks, lifecycle integration points, and extension guide for the Discord b
 | API                   | Base URL                          | Usage                                    |
 |-----------------------|-----------------------------------|------------------------------------------|
 | **Scryfall**          | `https://api.scryfall.com`        | Card data, images, booster generation    |
+| **Perchance**         | `https://perchance.org`           | Random Chaos RPG content generation       |
 | **Discord**           | via discord.js                    | Bot commands, events, user management    |
 | **Google Forms**      | Embedded links                    | League registration and surveys          |
 | **Google Sheets**     | URL references                    | Standings, statistics, data analysis     |
@@ -249,6 +251,52 @@ Event hooks, lifecycle integration points, and extension guide for the Discord b
 | `banThreshold`         | Messages before ban                | `7`     |
 | `maxInterval`          | Time window (ms)                   | `2000`  |
 | `maxDuplicatesInterval`| Duplicate check window (ms)       | `60000` |
+
+---
+
+## Maintenance & Automation
+
+The repository is kept healthy by a **weekly maintenance workflow**
+([`.github/workflows/weekly-maintenance.yml`](.github/workflows/weekly-maintenance.yml)),
+which runs every Monday and can also be triggered manually. Each run executes
+[`scripts/weeklyMaintenance.js`](scripts/weeklyMaintenance.js) to:
+
+- Ensure every directory and subdirectory has a `README.md`, generated from the
+  directory's actual files and subdirectories.
+- Audit the tree for gaps (missing docs, empty files) and record findings.
+- Write a Markdown report to [`reports/`](reports/) and a JSON log to
+  [`logs/`](logs/) so each weekly run builds iteratively on the last.
+- Regenerate documentation and validate the codebase (`lint`, `test`,
+  `validate:json`) before committing any changes.
+
+Run it locally with:
+
+```bash
+npm run maintain        # apply: create missing READMEs, write report + log
+npm run maintain:dry    # audit only, no files written
+```
+
+### Scheduled Tasks (daily / weekly / monthly / yearly)
+
+The **per-file task scheduler** ([`scripts/taskScheduler.js`](scripts/taskScheduler.js))
+derives daily, weekly, monthly, and yearly **tasks** — each bundling *todos*,
+*actions*, and executable *commands* — for every file in the project. The
+result is written to [`tasks/`](tasks/) as a machine-readable manifest
+(`tasks/tasks.json`) that mtgBot can **contain**, **control**, and **execute**,
+plus human-readable views per cadence.
+
+```bash
+npm run tasks           # regenerate tasks/tasks.json and cadence docs
+npm run tasks:dry       # audit only, no files written
+npm run tasks:daily     # execute the whitelisted daily commands
+npm run tasks:weekly    # weekly / tasks:monthly / tasks:yearly
+```
+
+Only commands on the scheduler's whitelist are ever executed. The cadences are
+automated by the daily, weekly, monthly
+([`.github/workflows/monthly-tasks.yml`](.github/workflows/monthly-tasks.yml)),
+and yearly ([`.github/workflows/yearly-tasks.yml`](.github/workflows/yearly-tasks.yml))
+workflows. See [`tasks/README.md`](tasks/README.md) for details.
 
 ---
 
