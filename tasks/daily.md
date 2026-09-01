@@ -1,6 +1,6 @@
 # Daily Tasks
 
-> Generated: 2026-08-11T16:04:57.367Z
+> Generated: 2026-09-01T13:49:21.310Z
 > Files with daily tasks are listed below with their todos, actions, and commands.
 
 ## Executable commands
@@ -838,6 +838,206 @@
 **Commands:**
 - `npm run validate:json`
 
+### `logs/maintenance-2026-08-12.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-12.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-13.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-13.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-14.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-14.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-15.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-15.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-16.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-16.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-17.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-17.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-18.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-18.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-19.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-19.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-20.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-20.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-21.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-21.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-22.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-22.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-23.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-23.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-24.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-24.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-25.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-25.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-26.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-26.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-27.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-27.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-28.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-28.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-29.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-29.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-30.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-30.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
+### `logs/maintenance-2026-08-31.json`
+
+**Todos:**
+- [ ] Validate JSON syntax of `logs/maintenance-2026-08-31.json`
+
+**Actions:** `validate-json`
+
+**Commands:**
+- `npm run validate:json`
+
 ### `logs/README.md`
 
 **Todos:**
@@ -1424,6 +1624,146 @@
 
 **Todos:**
 - [ ] Verify links and headings in `reports/maintenance-2026-08-11.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-12.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-12.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-13.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-13.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-14.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-14.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-15.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-15.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-16.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-16.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-17.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-17.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-18.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-18.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-19.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-19.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-20.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-20.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-21.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-21.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-22.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-22.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-23.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-23.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-24.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-24.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-25.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-25.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-26.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-26.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-27.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-27.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-28.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-28.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-29.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-29.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-30.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-30.md`
+
+**Actions:** `docs-check`
+
+### `reports/maintenance-2026-08-31.md`
+
+**Todos:**
+- [ ] Verify links and headings in `reports/maintenance-2026-08-31.md`
 
 **Actions:** `docs-check`
 

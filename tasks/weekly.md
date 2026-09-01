@@ -1,6 +1,6 @@
 # Weekly Tasks
 
-> Generated: 2026-08-11T16:04:57.367Z
+> Generated: 2026-09-01T13:49:21.310Z
 > Files with weekly tasks are listed below with their todos, actions, and commands.
 
 ## Executable commands
@@ -1031,6 +1031,206 @@
 **Commands:**
 - `npm run format:check`
 
+### `logs/maintenance-2026-08-12.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-12.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-13.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-13.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-14.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-14.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-15.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-15.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-16.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-16.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-17.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-17.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-18.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-18.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-19.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-19.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-20.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-20.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-21.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-21.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-22.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-22.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-23.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-23.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-24.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-24.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-25.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-25.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-26.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-26.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-27.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-27.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-28.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-28.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-29.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-29.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-30.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-30.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
+### `logs/maintenance-2026-08-31.json`
+
+**Todos:**
+- [ ] Check formatting of `logs/maintenance-2026-08-31.json`
+
+**Actions:** `format-check`
+
+**Commands:**
+- `npm run format:check`
+
 ### `logs/README.md`
 
 **Todos:**
@@ -1725,6 +1925,206 @@
 
 **Todos:**
 - [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-11.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-12.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-12.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-13.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-13.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-14.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-14.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-15.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-15.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-16.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-16.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-17.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-17.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-18.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-18.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-19.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-19.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-20.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-20.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-21.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-21.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-22.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-22.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-23.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-23.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-24.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-24.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-25.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-25.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-26.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-26.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-27.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-27.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-28.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-28.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-29.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-29.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-30.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-30.md`
+
+**Actions:** `build-toc`
+
+**Commands:**
+- `npm run build:toc`
+
+### `reports/maintenance-2026-08-31.md`
+
+**Todos:**
+- [ ] Regenerate the table of contents affecting `reports/maintenance-2026-08-31.md`
 
 **Actions:** `build-toc`
 

@@ -1,6 +1,6 @@
 # Monthly Tasks
 
-> Generated: 2026-08-11T16:04:57.367Z
+> Generated: 2026-09-01T13:49:21.310Z
 > Files with monthly tasks are listed below with their todos, actions, and commands.
 
 ## Executable commands
@@ -723,6 +723,146 @@ _No executable commands for this cadence._
 
 **Actions:** `schema-review`
 
+### `logs/maintenance-2026-08-12.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-12.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-13.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-13.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-14.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-14.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-15.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-15.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-16.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-16.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-17.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-17.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-18.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-18.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-19.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-19.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-20.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-20.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-21.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-21.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-22.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-22.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-23.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-23.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-24.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-24.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-25.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-25.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-26.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-26.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-27.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-27.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-28.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-28.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-29.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-29.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-30.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-30.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
+### `logs/maintenance-2026-08-31.json`
+
+**Todos:**
+- [ ] Review `logs/maintenance-2026-08-31.json` schema and remove stale keys
+
+**Actions:** `schema-review`
+
 ### `logs/README.md`
 
 **Todos:**
@@ -1210,6 +1350,146 @@ _No executable commands for this cadence._
 
 **Todos:**
 - [ ] Proofread `reports/maintenance-2026-08-11.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-12.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-12.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-13.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-13.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-14.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-14.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-15.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-15.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-16.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-16.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-17.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-17.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-18.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-18.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-19.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-19.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-20.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-20.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-21.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-21.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-22.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-22.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-23.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-23.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-24.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-24.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-25.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-25.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-26.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-26.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-27.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-27.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-28.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-28.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-29.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-29.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-30.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-30.md` and refresh outdated sections
+
+**Actions:** `proofread`
+
+### `reports/maintenance-2026-08-31.md`
+
+**Todos:**
+- [ ] Proofread `reports/maintenance-2026-08-31.md` and refresh outdated sections
 
 **Actions:** `proofread`
 
