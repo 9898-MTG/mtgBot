@@ -1,7 +1,7 @@
 # Hook Reference
 
 > Auto-generated from `hooks/HookRegistry.js` and `hooks/schemas.js`.
-> Generated: 2026-09-05
+> Generated: 2026-09-06
 
 ---
 
