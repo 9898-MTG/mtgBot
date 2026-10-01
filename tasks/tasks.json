@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T13:49:21.310Z",
+  "generatedAt": "2026-10-01T15:52:04.798Z",
   "cadences": [
     "daily",
     "weekly",
@@ -7,11 +7,11 @@
     "yearly"
   ],
   "summary": {
-    "files": 311,
-    "daily": 723,
-    "weekly": 978,
-    "monthly": 622,
-    "yearly": 622
+    "files": 371,
+    "daily": 873,
+    "weekly": 1158,
+    "monthly": 742,
+    "yearly": 742
   },
   "files": [
     {
@@ -5524,6 +5524,1386 @@
       }
     },
     {
+      "file": "logs/maintenance-2026-09-01.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-01.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-01.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-01.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-01.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-02.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-02.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-02.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-02.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-02.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-03.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-03.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-03.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-03.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-03.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-04.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-04.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-04.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-04.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-04.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-05.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-05.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-05.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-05.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-05.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-06.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-06.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-06.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-06.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-06.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-07.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-07.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-07.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-07.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-07.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-08.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-08.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-08.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-08.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-08.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-09.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-09.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-09.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-09.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-09.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-10.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-10.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-10.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-10.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-10.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-11.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-11.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-11.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-11.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-11.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-12.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-12.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-12.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-12.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-12.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-13.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-13.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-13.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-13.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-13.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-14.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-14.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-14.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-14.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-14.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-15.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-15.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-15.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-15.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-15.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-16.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-16.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-16.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-16.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-16.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-17.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-17.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-17.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-17.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-17.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-18.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-18.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-18.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-18.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-18.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-19.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-19.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-19.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-19.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-19.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-20.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-20.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-20.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-20.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-20.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-21.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-21.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-21.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-21.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-21.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-22.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-22.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-22.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-22.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-22.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-23.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-23.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-23.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-23.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-23.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-24.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-24.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-24.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-24.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-24.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-25.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-25.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-25.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-25.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-25.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-26.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-26.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-26.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-26.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-26.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-27.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-27.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-27.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-27.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-27.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-28.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-28.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-28.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-28.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-28.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-29.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-29.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-29.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-29.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-29.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "logs/maintenance-2026-09-30.json",
+      "category": "json",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Validate JSON syntax of `logs/maintenance-2026-09-30.json`"
+          ],
+          "actions": [
+            "validate-json"
+          ],
+          "commands": [
+            "npm run validate:json"
+          ]
+        },
+        "weekly": {
+          "todos": [
+            "Check formatting of `logs/maintenance-2026-09-30.json`"
+          ],
+          "actions": [
+            "format-check"
+          ],
+          "commands": [
+            "npm run format:check"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Review `logs/maintenance-2026-09-30.json` schema and remove stale keys"
+          ],
+          "actions": [
+            "schema-review"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Archive and version `logs/maintenance-2026-09-30.json` if it holds accumulating data"
+          ],
+          "actions": [
+            "archive"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
       "file": "logs/README.md",
       "category": "markdown",
       "cadences": {
@@ -9541,6 +10921,1326 @@
         "yearly": {
           "todos": [
             "Review `reports/maintenance-2026-08-31.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-01.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-01.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-01.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-01.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-01.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-02.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-02.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-02.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-02.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-02.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-03.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-03.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-03.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-03.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-03.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-04.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-04.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-04.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-04.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-04.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-05.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-05.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-05.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-05.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-05.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-06.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-06.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-06.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-06.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-06.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-07.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-07.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-07.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-07.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-07.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-08.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-08.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-08.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-08.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-08.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-09.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-09.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-09.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-09.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-09.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-10.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-10.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-10.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-10.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-10.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-11.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-11.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-11.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-11.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-11.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-12.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-12.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-12.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-12.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-12.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-13.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-13.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-13.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-13.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-13.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-14.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-14.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-14.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-14.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-14.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-15.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-15.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-15.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-15.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-15.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-16.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-16.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-16.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-16.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-16.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-17.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-17.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-17.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-17.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-17.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-18.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-18.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-18.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-18.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-18.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-19.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-19.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-19.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-19.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-19.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-20.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-20.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-20.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-20.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-20.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-21.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-21.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-21.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-21.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-21.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-22.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-22.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-22.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-22.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-22.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-23.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-23.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-23.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-23.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-23.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-24.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-24.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-24.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-24.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-24.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-25.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-25.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-25.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-25.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-25.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-26.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-26.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-26.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-26.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-26.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-27.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-27.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-27.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-27.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-27.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-28.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-28.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-28.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-28.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-28.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-29.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-29.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-29.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-29.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-29.md` for accuracy against the current codebase"
+          ],
+          "actions": [
+            "annual-doc-review"
+          ],
+          "commands": []
+        }
+      }
+    },
+    {
+      "file": "reports/maintenance-2026-09-30.md",
+      "category": "markdown",
+      "cadences": {
+        "daily": {
+          "todos": [
+            "Verify links and headings in `reports/maintenance-2026-09-30.md`"
+          ],
+          "actions": [
+            "docs-check"
+          ],
+          "commands": []
+        },
+        "weekly": {
+          "todos": [
+            "Regenerate the table of contents affecting `reports/maintenance-2026-09-30.md`"
+          ],
+          "actions": [
+            "build-toc"
+          ],
+          "commands": [
+            "npm run build:toc"
+          ]
+        },
+        "monthly": {
+          "todos": [
+            "Proofread `reports/maintenance-2026-09-30.md` and refresh outdated sections"
+          ],
+          "actions": [
+            "proofread"
+          ],
+          "commands": []
+        },
+        "yearly": {
+          "todos": [
+            "Review `reports/maintenance-2026-09-30.md` for accuracy against the current codebase"
           ],
           "actions": [
             "annual-doc-review"
