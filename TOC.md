@@ -198,6 +198,7 @@
         - [maintenance-2026-10-28.json](logs/maintenance-2026-10-28.json)
         - [maintenance-2026-10-29.json](logs/maintenance-2026-10-29.json)
         - [maintenance-2026-10-30.json](logs/maintenance-2026-10-30.json)
+        - [maintenance-2026-10-31.json](logs/maintenance-2026-10-31.json)
     - **lua/**
         - [README.md](lua/README.md)
         - [index.html](lua/index.html)
@@ -379,6 +380,7 @@
         - [maintenance-2026-10-28.md](reports/maintenance-2026-10-28.md)
         - [maintenance-2026-10-29.md](reports/maintenance-2026-10-29.md)
         - [maintenance-2026-10-30.md](reports/maintenance-2026-10-30.md)
+        - [maintenance-2026-10-31.md](reports/maintenance-2026-10-31.md)
     - **repositories/**
         - [README.md](repositories/README.md)
         - [index.html](repositories/index.html)
