@@ -1,6 +1,6 @@
 # Yearly Tasks
 
-> Generated: 2026-10-01T15:52:04.798Z
+> Generated: 2026-11-01T15:37:25.015Z
 > Files with yearly tasks are listed below with their todos, actions, and commands.
 
 ## Executable commands
@@ -1073,6 +1073,223 @@ _No executable commands for this cadence._
 
 **Actions:** `archive`
 
+### `logs/maintenance-2026-10-01.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-01.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-02.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-02.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-03.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-03.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-04.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-04.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-05.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-05.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-06.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-06.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-07.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-07.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-08.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-08.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-09.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-09.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-10.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-10.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-11.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-11.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-12.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-12.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-13.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-13.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-14.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-14.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-15.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-15.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-16.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-16.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-17.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-17.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-18.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-18.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-19.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-19.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-20.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-20.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-21.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-21.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-22.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-22.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-23.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-23.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-24.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-24.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-25.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-25.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-26.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-26.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-27.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-27.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-28.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-28.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-29.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-29.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-30.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-30.json` if it holds accumulating data
+
+**Actions:** `archive`
+
+### `logs/maintenance-2026-10-31.json`
+
+**Todos:**
+- [ ] Archive and version `logs/maintenance-2026-10-31.json` if it holds accumulating data
+
+**Actions:** `archive`
+
 ### `logs/README.md`
 
 **Todos:**
@@ -1910,6 +2127,223 @@ _No executable commands for this cadence._
 
 **Todos:**
 - [ ] Review `reports/maintenance-2026-09-30.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-01.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-01.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-02.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-02.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-03.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-03.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-04.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-04.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-05.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-05.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-06.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-06.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-07.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-07.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-08.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-08.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-09.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-09.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-10.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-10.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-11.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-11.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-12.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-12.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-13.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-13.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-14.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-14.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-15.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-15.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-16.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-16.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-17.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-17.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-18.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-18.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-19.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-19.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-20.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-20.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-21.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-21.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-22.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-22.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-23.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-23.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-24.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-24.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-25.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-25.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-26.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-26.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-27.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-27.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-28.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-28.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-29.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-29.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-30.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-30.md` for accuracy against the current codebase
+
+**Actions:** `annual-doc-review`
+
+### `reports/maintenance-2026-10-31.md`
+
+**Todos:**
+- [ ] Review `reports/maintenance-2026-10-31.md` for accuracy against the current codebase
 
 **Actions:** `annual-doc-review`
 
