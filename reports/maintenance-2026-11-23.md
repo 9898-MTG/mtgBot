@@ -1,6 +1,6 @@
 # Weekly Maintenance Report
 
-> Generated: 2026-11-23T20:46:15.319Z
+> Generated: 2026-11-23T20:53:17.178Z
 > Mode: apply
 
 ## Summary
@@ -8,7 +8,7 @@
 | Metric | Count |
 |--------|-------|
 | Directories scanned | 103 |
-| Files scanned | 485 |
+| Files scanned | 487 |
 | READMEs created | 0 |
 | Directories missing README (dry-run) | 0 |
 | Empty files found | 0 |
